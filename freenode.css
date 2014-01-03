@@ -1,0 +1,253 @@
+body {
+    font: normal 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body, button, input, select, textarea {
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: #36c;
+}
+
+.qwebirc-qui .ircwindow div {
+    text-indent: 0;
+}
+
+.qwebirc-qui .lines {
+    background: #ccc;
+    color: #333;
+}
+
+.colourline {
+    padding: 5px 10px;
+    margin-left: 70px;
+    font-family: inherit;
+    background: #fefefe;
+}
+
+.colourline.linestyle1 {
+    background: #f9f9f9;
+}
+
+.colourline.linestyle2 {
+    background: #eee;
+}
+
+hr.lastpos {
+    margin: 0;
+    border-top: 3px solid #D38960;
+}
+
+hr.lastpos:last-child {
+    border-top-width: 0;
+}
+
+hr.lastpos ~ .colourline {
+    background: #ffffff;
+}
+
+hr.lastpos ~ .colourline.linestyle2 {
+    background: #fcfcfc;
+}
+
+.colourline .timestamp + .Xc4, .colourline .timestamp + .Xc4 + span {
+    transition: opacity 200ms 200ms ease;
+    opacity: 0.1;
+}
+
+.colourline .timestamp + span + .Xc4, .colourline .timestamp + span + .Xc4 + span {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.colourline .timestamp {
+    display: block;
+    margin-left: -72px;
+    margin-right: 8px;
+    float: left;
+    opacity: 0.4;
+    font-family: Consolas, "Lucida Console", monospace;
+}
+
+.colourline .timestamp + .Xc4 {
+    float: left;
+    margin-right: 10px;
+}
+
+.bottomboundpanel {
+    padding: 0;
+    border: none;
+}
+
+.bottomboundpanel .input input {
+    margin: 0;
+    padding: 6px;
+    font-size: 1em;
+    line-height: 1.5;
+    border-top: 1px solid #aaa;
+    background: #eee;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.bottomboundpanel .input input:focus {
+    outline: none;
+    border-color: #36c;
+    background: white;
+}
+
+.colourline:hover .timestamp + .Xc4, .colourline:hover .timestamp + .Xc4 + span {
+    opacity: 0.5;
+}
+
+.nicklist {
+    font-size: 0.8em;
+    border-left: none;
+    background: #333;
+    color: white;
+}
+
+.nicklist a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.nicklist a > span {
+    display: block;
+    padding: 2px 8px;
+}
+
+.nicklist > a:hover, .nicklist .selected {
+    background: #36c;
+}
+
+.nicklist .selected .menu {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.nicklist .selected .menu a {
+    padding: 3px 10px;
+}
+
+.nicklist .selected .menu a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.topboundpanel {
+    z-index: 1;
+    border: none;
+    background: #333;
+    color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.topboundpanel .dropdown-tab, .topboundpanel .tabbar .tab {
+    padding: 4px 10px;
+}
+
+.topboundpanel .dropdown-tab {
+    width: auto;
+}
+
+.topboundpanel .dropdown-tab::before {
+    content: "FreeNode";
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.topboundpanel .dropdown-tab img {
+    display: none;
+}
+
+.topboundpanel .tabbar {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    color: inherit;
+}
+
+.topboundpanel .tabbar .tab {
+    display: block;
+    float: left;
+    border: none;
+    border-radius: 0;
+    color: inherit;
+    cursor: pointer;
+}
+
+.topboundpanel .tabbar .tab:hover, .topboundpanel .tabbar .tab-selected {
+    background: white;
+    color: #333;
+}
+
+.topboundpanel .tabbar .tab .tabclose {
+    position: relative;
+    display: inline-block;
+    text-indent: -9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    margin: 2px 0 2px 6px;
+    padding: 0;
+    background: rgba(125, 125, 125, 0.3);
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+}
+
+.topboundpanel .tabbar .tab .tabclose::before {
+    content: '×';
+    text-indent: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.topboundpanel .tabbar .tab:hover .tabclose, .topboundpanel .tabbar .tab-selected .tabclose {
+    color: white;
+}
+
+.topboundpanel .tabbar .tab .tabclose:hover {
+    background: rgba(125, 125, 125, 0.6);
+    color: white;
+}
+
+.topic {
+    z-index: 1;
+    margin-left: 0;
+    font-size: 0.8em;
+    border: none;
+    background: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownmenu {
+    margin-top: 1px;
+    border: solid #ccc;
+    border-width: 0 1px 1px 0;
+    background: white;
+    border-radius: 0 0 3px 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.dropdownmenu a {
+    padding: 4px 8px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.dropdownmenu a:hover {
+    background: #eee;
+}
